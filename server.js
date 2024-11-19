@@ -3,37 +3,44 @@ import express from "express";
 
 //lista de arrays de objetos
 const posts = [
-
+    
     {
+        id: 1,
         descricao: "Uma foto teste",
         imagem: "https://placecats.com/millie/300/150"
     },
 
     {
+        id: 2,
         descricao: "Um lindo por do sol",
         imagem: "https://placekitten.com/400/200"
     },
 
     {
+        id: 3,
         descricao: "Um gato brincando no jardim",
         imagem: "https://placekitten.com/350/150"
     },
 
     {
+        id: 4,
         descricao: "Café e leitura",
         imagem: "https://placekitten.com/450/250"
     },
+
     {
+        id: 5,
         descricao: "Paisagem montanhosa",
         imagem: "https://placekitten.com/500/300"
     },
 
     {
+        id: 6,
         descricao: "Relaxando no sofá",
         imagem: "https://placekitten.com/600/400"
     }
-
 ];
+
 
 const app = express();
 
