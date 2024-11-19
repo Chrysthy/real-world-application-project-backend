@@ -59,7 +59,7 @@ app.get("/posts", (req, res) => {
     res.status(200).json(posts);
 });
 
-function buscarPostPorID (id) {
+function buscarPostPorID(id) {
 
     return posts.findIndex((post) => {
 
@@ -69,6 +69,10 @@ function buscarPostPorID (id) {
 
 app.get("/posts/:id", (req, res) => {
 
+    //params= parâmetros da requisição
+    const index = buscarPostPorID(req.params.id)
 
-    res.status(200).json(posts);
+    //index passando a posição do post
+    res.status(200).json(posts[index]);
+
 });
