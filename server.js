@@ -32,10 +32,12 @@ const posts = [
         descricao: "Relaxando no sofá",
         imagem: "https://placekitten.com/600/400"
     }
-    
+
 ];
 
 const app = express();
+
+app.use(express.json());
 
 app.listen(3000, () => {
 
