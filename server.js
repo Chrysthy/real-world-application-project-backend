@@ -3,7 +3,7 @@ import express from "express";
 
 //lista de arrays de objetos
 const posts = [
-    
+
     {
         id: 1,
         descricao: "Uma foto teste",
@@ -56,5 +56,19 @@ app.listen(3000, () => {
 app.get("/posts", (req, res) => {
 
     //vai devolver status ok e ao invés de send, será json recebendo posts
+    res.status(200).json(posts);
+});
+
+function buscarPostPorID (id) {
+
+    return posts.findIndex((post) => {
+
+        return post.id === Number(id)
+    })
+}
+
+app.get("/posts/:id", (req, res) => {
+
+
     res.status(200).json(posts);
 });
