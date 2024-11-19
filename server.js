@@ -37,6 +37,7 @@ const posts = [
 
 const app = express();
 
+//adicionando rota - coverter string para JSON
 app.use(express.json());
 
 app.listen(3000, () => {
@@ -44,8 +45,9 @@ app.listen(3000, () => {
     console.log("Server is running on port 3000");
 });
 
-//Pode deixar vazio, só  com / ou colocar algo como /api
-app.get("/api", (req, res) => {
+//Pode deixar vazio, só  com / ou colocar algo como /posts
+app.get("/posts", (req, res) => {
 
-    res.status(200).send("Hello World!");
+    //vai devolver status ok e ao invés de send, será json recebendo posts
+    res.status(200).json(posts);
 });
