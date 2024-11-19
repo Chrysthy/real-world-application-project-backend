@@ -1,6 +1,40 @@
 //Criando um servidor com Express
 import express from "express";
 
+//lista de arrays de objetos
+const posts = [
+
+    {
+        descricao: "Uma foto teste",
+        imagem: "https://placecats.com/millie/300/150"
+    },
+
+    {
+        descricao: "Um lindo por do sol",
+        imagem: "https://placekitten.com/400/200"
+    },
+
+    {
+        descricao: "Um gato brincando no jardim",
+        imagem: "https://placekitten.com/350/150"
+    },
+
+    {
+        descricao: "Café e leitura",
+        imagem: "https://placekitten.com/450/250"
+    },
+    {
+        descricao: "Paisagem montanhosa",
+        imagem: "https://placekitten.com/500/300"
+    },
+
+    {
+        descricao: "Relaxando no sofá",
+        imagem: "https://placekitten.com/600/400"
+    }
+    
+];
+
 const app = express();
 
 app.listen(3000, () => {
