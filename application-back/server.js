@@ -49,7 +49,7 @@ app.use(express.json());
 
 app.listen(3000, () => {
 
-    console.log("Server is running on port 3000");
+    console.log("Server is running on port 3000...");
 });
 
 //Pode deixar vazio, só  com / ou colocar algo como /posts
