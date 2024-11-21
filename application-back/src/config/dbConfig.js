@@ -1,21 +1,22 @@
 import { MongoClient } from 'mongodb';
 
-export default async function conectarAoBanco(stringConexao) { 
+export default async function conectarAoBanco(stringConexao) {
 
-  let mongoClient;
+    let mongoClient;
 
-  try {
+    try {
 
-      mongoClient = new MongoClient(stringConexao);
-      console.log('Conectando ao cluster do banco de dados...');
-      await mongoClient.connect();
-      console.log('Conectado ao MongoDB Atlas com sucesso!');
+        mongoClient = new MongoClient(stringConexao);
+        console.log('Conectando ao cluster do banco de dados...');
 
-      return mongoClient;
+        await mongoClient.connect();
+        console.log('Conectado ao MongoDB Atlas com sucesso!');
 
-  } catch (erro) {
-    
-      console.error('Falha na conexão com o banco!', erro);
-      process.exit();
-  }
+        return mongoClient;
+
+    } catch (erro) {
+
+        console.error('Falha na conexão com o banco!', erro);
+        process.exit();
+    }
 }
