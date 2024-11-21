@@ -1,6 +1,9 @@
 //Criando um servidor com Express
 import express from "express";
 
+console.log(process.env.STRING_CONEXAO);
+
+
 //lista de arrays de objetos
 const posts = [
 
