@@ -2,6 +2,9 @@
 import express from "express";
 import conectarAoBanco from "./src/config/dbConfig.js";
 
+//Conectar passando a STRING_CONEXAO
+await conectarAoBanco(process.env.STRING_CONEXAO)
+
 //lista de arrays de objetos
 const posts = [
 
