@@ -1,5 +1,6 @@
 //Criando um servidor com Express
 import express from "express";
+import conectarAoBanco from "./src/config/dbConfig.js";
 
 //lista de arrays de objetos
 const posts = [
