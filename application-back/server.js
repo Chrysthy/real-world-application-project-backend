@@ -3,7 +3,7 @@ import express from "express";
 import conectarAoBanco from "./src/config/dbConfig.js";
 
 //Conectar passando a STRING_CONEXAO
-await conectarAoBanco(process.env.STRING_CONEXAO)
+const conexao = await conectarAoBanco(process.env.STRING_CONEXAO)
 
 //lista de arrays de objetos
 const posts = [
@@ -55,6 +55,15 @@ app.listen(3000, () => {
 
     console.log("Server is running on port 3000...");
 });
+
+async function getTodosPosts() {
+
+    const db = conexao.db("postsreal-world-application");
+
+    const colecao = db.collection("posts");
+
+}
+
 
 //Pode deixar vazio, só  com / ou colocar algo como /posts
 app.get("/posts", (req, res) => {
