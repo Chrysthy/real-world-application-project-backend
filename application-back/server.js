@@ -1,11 +1,8 @@
-//Criando um servidor com Express
 import express from "express";
 import conectarAoBanco from "./src/config/dbConfig.js";
 
-//Conectar passando a STRING_CONEXAO
 const conexao = await conectarAoBanco(process.env.STRING_CONEXAO)
 
-//lista de arrays de objetos
 const posts = [
 
     {
@@ -48,7 +45,6 @@ const posts = [
 
 const app = express();
 
-//adicionando rota - coverter string para JSON
 app.use(express.json());
 
 app.listen(3000, () => {
@@ -65,13 +61,10 @@ async function getTodosPosts() {
     return colecao.find().toArray();
 }
 
-
-//Pode deixar vazio, só  com / ou colocar algo como /posts
 app.get("/posts", async (req, res) => {
 
     const posts = await getTodosPosts();
 
-    //vai devolver status ok e ao invés de send, será json recebendo posts
     res.status(200).json(posts);
 });
 
