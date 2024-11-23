@@ -1,4 +1,4 @@
-async function listarPosts(req, res) {
+export async function listarPosts(req, res) {
 
     const posts = await getTodosPosts();
 
