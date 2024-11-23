@@ -58,34 +58,37 @@ app.listen(3000, () => {
 
 async function getTodosPosts() {
 
-    const db = conexao.db("postsreal-world-application");
+    const db = conexao.db("real-world-application");
 
     const colecao = db.collection("posts");
 
+    return colecao.find().toArray();
 }
 
 
 //Pode deixar vazio, só  com / ou colocar algo como /posts
-app.get("/posts", (req, res) => {
+app.get("/posts", async (req, res) => {
+
+    const posts = await getTodosPosts();
 
     //vai devolver status ok e ao invés de send, será json recebendo posts
     res.status(200).json(posts);
 });
 
-function buscarPostPorID(id) {
+// function buscarPostPorID(id) {
 
-    return posts.findIndex((post) => {
+//     return posts.findIndex((post) => {
 
-        return post.id === Number(id)
-    })
-}
+//         return post.id === Number(id)
+//     })
+// }
 
-app.get("/posts/:id", (req, res) => {
+// app.get("/posts/:id", (req, res) => {
 
-    //params= parâmetros da requisição
-    const index = buscarPostPorID(req.params.id)
+//     //params= parâmetros da requisição
+//     const index = buscarPostPorID(req.params.id)
 
-    //index passando a posição do post
-    res.status(200).json(posts[index]);
+//     //index passando a posição do post
+//     res.status(200).json(posts[index]);
 
-});
+// });
