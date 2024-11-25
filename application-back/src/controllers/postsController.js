@@ -1,5 +1,6 @@
 import { getTodosPosts, criarPost, atualizarPost } from "../models/postsModel.js";
 import fs from "fs";
+import gerarDescricaoComGemini from "../services/geminiService.js";
 
 export async function listarPosts(req, res) {
 
@@ -64,6 +65,7 @@ export async function atualizarNovoPost(req, res) {
 
     try {
 
+        const imageBuffer = fs.readFileSync(`uploads/${id}.png`);
         const postCriado = await atualizarPost(id, post);
         res.status(200).json(postCriado);
 
