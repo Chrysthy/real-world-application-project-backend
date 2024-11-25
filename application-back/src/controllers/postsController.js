@@ -14,7 +14,7 @@ export async function postarNovoPost(req, res) {
 
     try {
 
-        const postCriado = await atualizarPost(id, post);
+        const postCriado = await atualizarPost(novoPost);
         res.status(200).json(postCriado);
 
     } catch (error) {
@@ -64,7 +64,7 @@ export async function atualizarNovoPost(req, res) {
 
     try {
 
-        const postCriado = await criarPost(novoPost);
+        const postCriado = await atualizarPost(id, post);
         res.status(200).json(postCriado);
 
     } catch (error) {
