@@ -19,3 +19,14 @@ export async function criarPost(novoPost){
 
     return colecao.insertOne(novoPost);
 }
+
+export async function atualizarPost(id, novoPost){
+    
+    const db = conexao.db("real-world-application");
+
+    const colecao = db.collection("posts");
+
+    const objID = ObjectId.createFromHexString(id);
+
+    return colecao.updateOne({_id: new ObjectId(objID)}, {$set: novoPost});
+}
