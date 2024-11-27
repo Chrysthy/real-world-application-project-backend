@@ -41,3 +41,12 @@
 - Dotenv
 - Cors
 - Google AI
+
+<br>
+
+## ✨ Features
+
+- [X] Banco de dados
+- [X]
+
+<br>
