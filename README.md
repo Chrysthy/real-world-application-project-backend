@@ -66,3 +66,9 @@
 - Run the program <kbd>pnpm run dev</kbd>
 
 <br>
+
+## 📜 License
+
+* This project is licensed under the [MIT License](https://choosealicense.com/licenses/mit/)
+
+<br>
