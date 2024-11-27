@@ -27,3 +27,17 @@
 </p>
 
 <br>
+
+## 🛠 Technologies
+
+- JavaScript
+- CSS
+- HTML
+- NPM
+- Node
+- Express
+- Mongodb
+- Multer
+- Dotenv
+- Cors
+- Google AI
