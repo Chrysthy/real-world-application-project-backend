@@ -50,3 +50,9 @@
 - [X]
 
 <br>
+
+## 💻 Project
+
+- The website was created to practice HTML, CSS, HTMX, JavaScript, Node, NPM, express, mongodb, multer, cors and google AI skills.
+
+<br>
