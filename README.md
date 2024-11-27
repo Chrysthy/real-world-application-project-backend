@@ -56,3 +56,13 @@
 - The website was created to practice HTML, CSS, HTMX, JavaScript, Node, NPM, express, mongodb, multer, cors and google AI skills.
 
 <br>
+
+## ⚙ How to Run
+
+- You need to have <kbd>[NodeJS](https://nodejs.org/en/download/)</kbd> installed on your machine.
+- Clone the project.
+- Install npm <kbd>npm init es6 -y </kbd>
+- Install <kbd>npm install express</kbd> dependencies.
+- Run the program <kbd>pnpm run dev</kbd>
+
+<br>
