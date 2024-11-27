@@ -59,7 +59,7 @@
 
 ## 💻 Project
 
-- The website was created to practice HTML, CSS, HTMX, JavaScript, Node, NPM, express, mongodb, multer, cors and google AI skills.
+- The website was created to practice HTML, CSS, JavaScript, Node, NPM, express, mongodb, multer, cors and google AI skills.
 
 <br>
 
