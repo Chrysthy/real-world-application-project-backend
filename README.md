@@ -1,4 +1,4 @@
-<h1 align="center"> Real World Application Projetc 📱 </h1> 
+<h1 align="center"> Real World Application Projetc 🤳🏻 </h1> 
 
 <p align="center">Project Based on Instagram.</p>
 
@@ -41,6 +41,7 @@
 - Dotenv
 - Cors
 - Google AI
+- Postman (para testar APIs)
 
 <br>
 
