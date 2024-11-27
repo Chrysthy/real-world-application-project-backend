@@ -69,7 +69,7 @@
 - Clone the project.
 - Install npm <kbd>npm init es6 -y </kbd>
 - Install <kbd>npm install express</kbd> dependencies.
-- Run the program <kbd>pnpm run dev</kbd>
+- Run the program <kbd>npm run dev</kbd>
 
 <br>
 
