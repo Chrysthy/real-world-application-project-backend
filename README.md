@@ -46,8 +46,13 @@
 
 ## ✨ Features
 
-- [X] Banco de dados
-- [X]
+- [X] Integração com banco de dados utilizando MongoDB;
+- [X] Upload de arquivos com Multer;
+- [X] Configurações de ambiente com Dotenv;
+- [X] Controle de acesso com Cors;
+- [X] Uso de inteligência artificial do Google AI;
+- [X] Testes de API realizados com Postman;
+- [X] Interface web utilizando HTML, CSS, e JavaScript.
 
 <br>
 
