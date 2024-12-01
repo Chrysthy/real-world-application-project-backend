@@ -21,8 +21,6 @@
 ## 🛠 Technologies
 
 - JavaScript
-- CSS
-- HTML
 - NPM
 - Node
 - Express
@@ -43,13 +41,12 @@
 - [X] Controle de acesso com Cors;
 - [X] Uso de inteligência artificial do Google AI;
 - [X] Testes de API realizados com Postman;
-- [X] Interface web utilizando HTML, CSS, e JavaScript.
 
 <br>
 
 ## 💻 Project
 
-- The website was created to practice HTML, CSS, JavaScript, Node, NPM, express, mongodb, multer, cors and google AI skills.
+- The website was created to practice JavaScript, Node, NPM, express, mongodb, multer, cors and google AI skills.
 
 <br>
 
